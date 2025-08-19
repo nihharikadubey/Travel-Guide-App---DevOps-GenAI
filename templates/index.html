@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="content-panel">
+        <h2>I'm travelling to...</h2>
+        <ul>
+            {% for c in cities %}
+            <li><a href="{{ url_for('city_route', name=c.Name) | relative_url }}">{{c.Name}}, {{c.CountryName}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

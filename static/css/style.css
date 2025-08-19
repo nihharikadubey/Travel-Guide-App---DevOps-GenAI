@@ -1,0 +1,80 @@
+.homepage-background {
+    /* Set the background image */
+    background-image: url("../images/download.png");
+    
+    /* Ensure the image covers the entire screen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Make sure it covers the full height of the viewport */
+    height: 100vh;
+    
+    /* Optional: add some overlay or color filter if necessary */
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: rgb(35, 71, 86); /* Text color */
+    
+}
+
+.content-panel {
+    /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    
+    /* Size of the content panel */
+    padding: 30px;
+    border-radius: 10px;
+    
+    /* Optional: Add some box shadow to make it stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    /* Center text */
+    text-align: center;
+}
+
+.content-panel-2 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.content-panel-2 {
+    /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    
+    /* Size of the content panel */
+    padding: 30px;
+    border-radius: 10px;
+    
+    /* Optional: Add some box shadow to make it stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.speech-bubble {
+    position: relative;
+    background: #ddddff;
+    border-radius: .4em;
+    padding: 10px;
+    margin: 10px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: #ddddff;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+    margin-left: -20px;
+}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content-panel-2">
+    <div class="row">
+        <div class="col">
+            <h2>Top things to do in {{ city.Name }}</h2>
+            <ul>
+                {% for todo in city.TopThingsToDo %}
+                <li>{{todo}}</li>
+                {% endfor %}
+            </ul>
+            <br>
+            <br>
+            <h2>Itinerary</h2>
+            <p> {{ city.Itinerary | nl2br }} </p>
+        </div>
+
+
+        <div class="col">
+            <h2>City Reviews</h2>
+
+            <div id="reviews">
+                {% for review in reviews %}
+                <div class="speech-bubble">{{"⭐️" * review.Stars}} {{review.ReviewContent}}</div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
